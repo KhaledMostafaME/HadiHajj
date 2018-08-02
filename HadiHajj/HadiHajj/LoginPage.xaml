@@ -11,10 +11,11 @@
                 Aspect="AspectFill"
                 Source="bg_image" />
             <StackLayout
-                Margin="50,250,50,0"
+                Margin="50,50,50,0"
                 AbsoluteLayout.LayoutBounds="1,1,1,1"
                 AbsoluteLayout.LayoutFlags="All"
                 BackgroundColor="Transparent">
+                <Image Source="logo" />
 
                 <Entry BackgroundColor="LightGray" Placeholder="Username" />
                 <Entry

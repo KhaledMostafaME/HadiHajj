@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="HadiHajj.SignupPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+    <ContentPage.Content>
+        <AbsoluteLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+            <Image
+                AbsoluteLayout.LayoutBounds="1,1,1,1"
+                AbsoluteLayout.LayoutFlags="All"
+                Aspect="AspectFill"
+                Source="bg_image" />
+
+            <StackLayout
+                Margin="50,50,50,0"
+                AbsoluteLayout.LayoutBounds="1,1,1,1"
+                AbsoluteLayout.LayoutFlags="All"
+                BackgroundColor="Transparent">
+                <Image Source="logo" />
+                <Entry BackgroundColor="LightGray" Placeholder="Name" />
+                <Entry BackgroundColor="LightGray" Placeholder="Phone" />
+                <Entry BackgroundColor="LightGray" Placeholder="Passport ID" />
+                <Entry BackgroundColor="LightGray" Placeholder="Username" />
+                <Entry BackgroundColor="LightGray" Placeholder="Username" />
+                <Button
+                    BackgroundColor="LightSkyBlue"
+                    BorderRadius="10"
+                    BorderWidth="1"
+                    HorizontalOptions="FillAndExpand"
+                    Text="Sign Up" />
+            </StackLayout>
+        </AbsoluteLayout>
+    </ContentPage.Content>
+</ContentPage>
