@@ -15,6 +15,7 @@
         <StackLayout HorizontalOptions="Center">
             <Label
                 Font="24"
+                HorizontalOptions="Center"
                 Text="عدد الاضاحي"
                 TextColor="Black" />
         </StackLayout>
