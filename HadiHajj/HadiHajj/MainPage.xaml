@@ -4,21 +4,35 @@
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:HadiHajj">
+    <ContentPage.Content>
 
-    <AbsoluteLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
-        <Image
-            AbsoluteLayout.LayoutBounds="1,1,1,1"
-            AbsoluteLayout.LayoutFlags="All"
-            Aspect="AspectFill"
-            Source="bg_image" />
+        <AbsoluteLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+            <Image
+                AbsoluteLayout.LayoutBounds="1,1,1,1"
+                AbsoluteLayout.LayoutFlags="All"
+                Aspect="AspectFill"
+                Source="bg_image" />
 
-        <StackLayout HorizontalOptions="Center">
-            <Label
-                Font="24"
-                HorizontalOptions="Center"
-                Text="عدد الاضاحي"
-                TextColor="Black" />
-        </StackLayout>
-    </AbsoluteLayout>
+            <StackLayout
+                Margin="50,200,50,50"
+                AbsoluteLayout.LayoutBounds="1,1,1,1"
+                AbsoluteLayout.LayoutFlags="All"
+                BackgroundColor="Transparent"
+                HorizontalOptions="Center">
+                <Label
+                    Font="24"
+                    Text="عدد الاضاحي"
+                    TextColor="Black" />
+                <Entry BackgroundColor="LightGray" Placeholder="ادخل العدد" />
 
+                <Button
+                    BackgroundColor="Green"
+                    BorderRadius="10"
+                    BorderWidth="1"
+                    HorizontalOptions="FillAndExpand"
+                    Text="ارسل الطلب"
+                    TextColor="Black" />
+            </StackLayout>
+        </AbsoluteLayout>
+    </ContentPage.Content>
 </ContentPage>

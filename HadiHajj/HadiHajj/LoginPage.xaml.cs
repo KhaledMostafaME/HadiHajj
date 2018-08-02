@@ -24,8 +24,7 @@ namespace HadiHajj
 
         private void btn_signup_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new Signup());
-
+           // await Navigation.PushAsync(new Signup());
         }
     }
 }
