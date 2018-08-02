@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="HadiHajj.MainPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:HadiHajj">
+
+    <AbsoluteLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+        <Image
+            AbsoluteLayout.LayoutBounds="1,1,1,1"
+            AbsoluteLayout.LayoutFlags="All"
+            Aspect="AspectFill"
+            Source="bg_image" />
+
+        <StackLayout HorizontalOptions="Center">
+            <Label
+                Font="24"
+                Text="عدد الاضاحي"
+                TextColor="Black" />
+        </StackLayout>
+    </AbsoluteLayout>
+
+</ContentPage>

@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="HadiHajj.LoginPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+    <ContentPage.Content>
+        <AbsoluteLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+            <Image
+                AbsoluteLayout.LayoutBounds="1,1,1,1"
+                AbsoluteLayout.LayoutFlags="All"
+                Aspect="AspectFill"
+                Source="bg_image" />
+            <StackLayout
+                Margin="50,250,50,0"
+                AbsoluteLayout.LayoutBounds="1,1,1,1"
+                AbsoluteLayout.LayoutFlags="All"
+                BackgroundColor="Transparent">
+
+                <Entry BackgroundColor="LightGray" Placeholder="Username" />
+                <Entry
+                    BackgroundColor="LightGray"
+                    IsPassword="True"
+                    Placeholder="Password" />
+                <StackLayout
+                    Margin="10"
+                    HorizontalOptions="Fill"
+                    Orientation="Horizontal">
+                    <Button
+                        x:Name="btn_login"
+                        Margin="0,0,10,0"
+                        BackgroundColor="Wheat"
+                        BorderColor="BurlyWood"
+                        BorderRadius="10"
+                        BorderWidth="1"
+                        Clicked="btn_login_ClickedAsync"
+                        HorizontalOptions="FillAndExpand"
+                        Text="Login"
+                        TextColor="Black" />
+                    <Button
+                        x:Name="btn_signup"
+                        BackgroundColor="Wheat"
+                        BorderColor="BurlyWood"
+                        BorderRadius="10"
+                        BorderWidth="1"
+                        Clicked="btn_signup_Clicked"
+                        HorizontalOptions="FillAndExpand"
+                        Text="Signup"
+                        TextColor="Black" />
+                </StackLayout>
+
+                <Button
+                    BackgroundColor="OrangeRed"
+                    BorderColor="BurlyWood"
+                    BorderRadius="10"
+                    BorderWidth="1"
+                    HorizontalOptions="Center"
+                    Text="Forget your password?" />
+            </StackLayout>
+        </AbsoluteLayout>
+    </ContentPage.Content>
+</ContentPage>
